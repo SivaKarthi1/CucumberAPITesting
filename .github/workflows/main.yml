@@ -2,6 +2,11 @@ name: Manual Trigger Workflow
 
 on:
   workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Select the branch to build'
+        required: true
+        default: 'master' 
 
 jobs:
   build:
