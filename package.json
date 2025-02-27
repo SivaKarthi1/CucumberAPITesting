@@ -1,0 +1,23 @@
+{
+  "name": "api-automation",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "cucumber-js",
+    "generate:report:folder": "mkdir reports",
+    "generate:report": "node report.js",
+    "open:report": "start reports/cucumber_report.html", 
+    "test:report": "npm run generate:report:folder && npm run test && npm run generate:report && npm run open:report"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "axios": "^0.21.1",
+    "chai": "^4.3.4",
+    "cucumber": "^6.0.7",
+    "cucumber-html-reporter": "^7.2.0"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^11.2.0"
+  }
+}
