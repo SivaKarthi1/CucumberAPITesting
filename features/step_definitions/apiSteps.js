@@ -15,6 +15,7 @@ Then('the response status code should be {int}', function (statusCode) {
 
   // Assert that the response status code matches
   expect(response.status).to.equal(statusCode);
+  console.log(response.statusCode);
   
 });
 
