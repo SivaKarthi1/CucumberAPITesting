@@ -1,0 +1,25 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: [ master ]  # Change this to master
+  pull_request:
+    branches: [ master ]  # Change this to master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+    - name: Install dependencies
+      run: npm install
+      working-directory: CucumberAPITesting  # Adjust if necessary
+    - name: Run tests
+      run: npm test
+      working-directory: CucumberAPITesting  # Adjust if necessary
