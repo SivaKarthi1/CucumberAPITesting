@@ -1,0 +1,68 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "api-testing-with-axios-and-cucumber;successfully-get-the-of-postalcode-from-the-api",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Successfully get the of postalcode from the API",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I make a GET request to \"https://api.zippopotam.us/us/98121\"",
+            "match": {
+              "location": "features\\step_definitions\\apiSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 574381200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "the response status code should be 200",
+            "match": {
+              "location": "features\\step_definitions\\apiSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5563400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the response body have",
+            "match": {
+              "location": "features\\step_definitions\\apiSteps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7051500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "api-testing-with-axios-and-cucumber",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "API Testing with Axios and Cucumber",
+    "tags": [],
+    "uri": "features\\apiTest.feature"
+  }
+]
