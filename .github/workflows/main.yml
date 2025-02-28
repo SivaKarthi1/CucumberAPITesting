@@ -6,7 +6,7 @@ on:
       branch:
         description: 'Select the branch to build'
         required: true
-        default: 'master' 
+        default: 'main' 
 
 jobs:
   build:
